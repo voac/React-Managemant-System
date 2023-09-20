@@ -30,10 +30,11 @@ const customers = [
   }
 ]
 
+// map을 사용할 땐 key 라는 이름의 props를 사용하자.
+
 function App() {
   return (
     <div>
-      // map을 사용할 땐 key 라는 이름의 props를 사용하자.
       { customers.map(c => { return <Customer key = {c.id} id = {c.id} image = {c.image} name = {c.name} birthday = {c.birthday} gender = {c.gender} job = {c.job} /> }) }
     </div>
   );
